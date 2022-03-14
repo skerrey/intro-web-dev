@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <title>Intro to Web Dev</title>
 </head>
-<body>
+<body style="background-image: url(img/background2.jpg);background-size:cover;height:100vh;">
     <div class="header text-center">
         <h1>Welcome to Introduction to Web Development!</h1>
-        <h4>Where learning is made fun!</h3>
+        <h4 class="font-italic">Where learning is made fun!</h3>
     </div>
 
     <div class="container-fluid" style="margin-top: 100px; width:80%;">
@@ -42,7 +46,7 @@
 
                                 </p>
                                 <ol>
-                                    <li>Download VSCode + Extensions</li>
+                                    <li><a href="pdf/week-1/Downloading Visual Studio Code.pdf" target="_blank">Download VSCode + Extensions</a></li>
                                     <li>Getting a GitHub account set up</li>
                                     <li>Basic HTML Layout</li>
                                     <li>Intro to CSS</li>
@@ -75,9 +79,9 @@
 
                     <div class="card">
                         <div class="card-header">
-                             <a class="collapsed card-link" data-toggle="collapse" data-parent="#card-main" href="#card-element-4">Week 4</a>
+                             <a class="collapsed card-link data-bs-parent" data-toggle="collapse" data-parent="#card-main" href="#card-element-4">Week 4</a>
                         </div>
-                        <div id="card-element-4" class="collapse">
+                        <div id="card-element-4" class="collapse multi-collapse">
                             <div class="card-body">
                                 Anim pariatur cliche...
                             </div>
@@ -89,11 +93,16 @@
         </div>
     </div>
 
-    <div class="footer fixed-bottom text-center font-italicd" style="margin-bottom:50px;">
+    <a href="https://skerrey.github.io/web-portfolio/" target="_blank">
+    <div class="footer fixed-bottom mx-auto text-center font-italic" style="margin-bottom:50px;border:1px solid black;width:15%;">
         Created by Seth Kerrey
     </div>
-    
-
+</a>
+<script>
+    jQuery('button').click( function(e) {
+    jQuery('.collapse').collapse('hide');
+});
+</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" ></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
